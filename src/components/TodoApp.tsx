@@ -1,12 +1,10 @@
 import { useState } from "react";
-
 import { TodoItem } from "./TodoItem";
 type TodoItemType = {
   id: number;
   description: string;
   done: boolean;
 };
-
 
 type TodoAppProps = {
   tasks: TodoItemType[];
@@ -28,11 +26,10 @@ export function TodoApp({
       setNewTask("");
     }
   };
-
   return (
     <>
       <div className="w-full flex mb-4">
-        <label className="input input-bordered flex items-center gap-2 w-full">
+        <label className="input input-bordered flex items-center gap-2 w-4/6">
           <input
             type="text"
             className="grow"
